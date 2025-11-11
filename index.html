@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca: Mentes Creativas de 9nos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Biblioteca: Mentes Creativas de 9nos</h1>
+    <p class="subtitulo">“Un espacio para compartir el talento de 9nos”</p>
+  </header>
+
+  <main>
+    <section id="subir-trabajo">
+      <h2>Sube tu trabajo</h2>
+      <form id="uploadForm">
+        <input type="text" id="autor" placeholder="Nombre del autor" required>
+        <input type="text" id="titulo" placeholder="Título del trabajo" required>
+        <input type="url" id="enlace" placeholder="Enlace (Google Drive, OneDrive...)" />
+        <input type="file" id="archivo" />
+        <button type="submit">Subir</button>
+      </form>
+    </section>
+
+    <section id="lista-trabajos">
+      <h2>Trabajos publicados</h2>
+      <ul id="trabajos"></ul>
+    </section>
+
+    <section id="admin">
+      <h2>Panel de administración</h2>
+      <input type="password" id="adminPass" placeholder="Contraseña de administrador">
+      <button id="loginAdmin">Ingresar</button>
+      <p id="adminStatus"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Mentes Creativas de 9nos – Proyecto escolar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
